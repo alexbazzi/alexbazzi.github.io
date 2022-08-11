@@ -12,10 +12,12 @@ body {
   overflow-x: hidden;
   padding-top: 20px;
 }
+
 img {
-    max-width: 100px;
-    max-height: 150px;
+    max-width: 1024px;
+    max-height: 512px;
 }
+
 .left {
   left: 0;
   background-color: #000;
