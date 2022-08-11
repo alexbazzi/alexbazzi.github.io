@@ -2,7 +2,8 @@ body {
     font-family: Arial;
     color: black;
     background: url('/assets/img/banner.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
