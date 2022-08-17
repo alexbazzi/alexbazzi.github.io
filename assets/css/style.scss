@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* typeD mixin */
+@import 'typed';
+
+/* Global */
+html{
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+body {
+    font-family: Arial;
+    color: black;
+    background: url('/assets/img/banner3.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    /*height: calc(100vh - 8em);
+    padding: 4em;*/
+    
+    font-family: 'Anonymous Pro', monospace;
+}
+.padder {
+  padding-top:15%;
+}
+
+.black {
+  color: black;
+}
+.white {
+  color: white;
+  background-color: purple;
+}
+.typewriter {
+	padding: 0 0 0 3px;
+  font-size: 26px;
+	background-color: purple;
+	&::before { font-weight: 600; }
+	@include typed(
+		"thermo-fluids", "combustion", "compressible flows",
+		2,
+		(caret-width: 2px, caret-space: 2px)
+	);
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+img {
+    max-width: 1024px;
+    max-height: 512px;
+}
+
+.left {
+    left: 0;
+    background-color: #000;
+}
+
+.right {
+    right: 0;
+    background-color: red;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgba(255, 255, 255, 0.105);}
+
+ul.topnav li a.active {color: purple;}
+
+ul.topnav li.right {float: right;}

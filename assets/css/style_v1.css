@@ -1,0 +1,551 @@
+@charset "UTF-8";
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+/* typeD mixin */
+/* Global */
+html {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial;
+  color: black;
+  background: url("/assets/img/banner3.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  /*height: calc(100vh - 8em);
+  padding: 4em;*/
+  font-family: "Anonymous Pro", monospace;
+}
+
+.padder {
+  padding-top: 15%;
+}
+
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+  background-color: purple;
+}
+
+.typewriter {
+  padding: 0 0 0 3px;
+  font-size: 26px;
+  background-color: purple;
+}
+.typewriter::before {
+  font-weight: 600;
+}
+.typewriter::before {
+  content: "​";
+  content: "​"/"thermo-fluids";
+  alt: "thermo-fluids";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 8.19s linear 1s infinite forwards;
+}
+.typewriter::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 2px;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@keyframes typed-0 {
+  0%, 0.6095006105% {
+    content: "​t";
+    content: "​t"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  0.6105006105%, 1.220001221% {
+    content: "​th";
+    content: "​th"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  1.221001221%, 1.8305018315% {
+    content: "​the";
+    content: "​the"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  1.8315018315%, 2.441002442% {
+    content: "​ther";
+    content: "​ther"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  2.442002442%, 3.0515030525% {
+    content: "​therm";
+    content: "​therm"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  3.0525030525%, 3.662003663% {
+    content: "​thermo";
+    content: "​thermo"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  3.663003663%, 4.2725042735% {
+    content: "​thermo-";
+    content: "​thermo-"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  4.2735042735%, 4.883004884% {
+    content: "​thermo-f";
+    content: "​thermo-f"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  4.884004884%, 5.4935054945% {
+    content: "​thermo-fl";
+    content: "​thermo-fl"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  5.4945054945%, 6.104006105% {
+    content: "​thermo-flu";
+    content: "​thermo-flu"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  6.105006105%, 6.7145067155% {
+    content: "​thermo-flui";
+    content: "​thermo-flui"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  6.7155067155%, 7.325007326% {
+    content: "​thermo-fluid";
+    content: "​thermo-fluid"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  7.326007326%, 20.6339206349% {
+    content: "​thermo-fluids";
+    content: "​thermo-fluids"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  20.6349206349%, 21.1223211233% {
+    content: "​thermo-fluid";
+    content: "​thermo-fluid"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  21.1233211233%, 21.6107216117% {
+    content: "​thermo-flui";
+    content: "​thermo-flui"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  21.6117216117%, 22.0991221001% {
+    content: "​thermo-flu";
+    content: "​thermo-flu"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  22.1001221001%, 22.5875225885% {
+    content: "​thermo-fl";
+    content: "​thermo-fl"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  22.5885225885%, 23.0759230769% {
+    content: "​thermo-f";
+    content: "​thermo-f"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  23.0769230769%, 23.5643235653% {
+    content: "​thermo-";
+    content: "​thermo-"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  23.5653235653%, 24.0527240537% {
+    content: "​thermo";
+    content: "​thermo"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  24.0537240537%, 24.5411245421% {
+    content: "​therm";
+    content: "​therm"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  24.5421245421%, 25.0295250305% {
+    content: "​ther";
+    content: "​ther"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  25.0305250305%, 25.5179255189% {
+    content: "​the";
+    content: "​the"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  25.5189255189%, 26.0063260073% {
+    content: "​th";
+    content: "​th"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  26.0073260073%, 26.4947264957% {
+    content: "​t";
+    content: "​t"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  26.4957264957%, 32.5997326007% {
+    content: "​";
+    content: "​"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  32.6007326007%, 33.2102332112% {
+    content: "​c";
+    content: "​c"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  33.2112332112%, 33.8207338217% {
+    content: "​co";
+    content: "​co"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  33.8217338217%, 34.4312344322% {
+    content: "​com";
+    content: "​com"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  34.4322344322%, 35.0417350427% {
+    content: "​comb";
+    content: "​comb"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  35.0427350427%, 35.6522356532% {
+    content: "​combu";
+    content: "​combu"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  35.6532356532%, 36.2627362637% {
+    content: "​combus";
+    content: "​combus"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  36.2637362637%, 36.8732368742% {
+    content: "​combust";
+    content: "​combust"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  36.8742368742%, 37.4837374847% {
+    content: "​combusti";
+    content: "​combusti"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  37.4847374847%, 38.0942380952% {
+    content: "​combustio";
+    content: "​combustio"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  38.0952380952%, 51.4031514042% {
+    content: "​combustion";
+    content: "​combustion"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  51.4041514042%, 51.8915518926% {
+    content: "​combustio";
+    content: "​combustio"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  51.8925518926%, 52.379952381% {
+    content: "​combusti";
+    content: "​combusti"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  52.380952381%, 52.8683528694% {
+    content: "​combust";
+    content: "​combust"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  52.8693528694%, 53.3567533578% {
+    content: "​combus";
+    content: "​combus"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  53.3577533578%, 53.8451538462% {
+    content: "​combu";
+    content: "​combu"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  53.8461538462%, 54.3335543346% {
+    content: "​comb";
+    content: "​comb"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  54.3345543346%, 54.821954823% {
+    content: "​com";
+    content: "​com"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  54.822954823%, 55.3103553114% {
+    content: "​co";
+    content: "​co"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  55.3113553114%, 55.7987557998% {
+    content: "​c";
+    content: "​c"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  55.7997557998%, 61.9037619048% {
+    content: "​";
+    content: "​"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  61.9047619048%, 62.5142625153% {
+    content: "​c";
+    content: "​c"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  62.5152625153%, 63.1247631258% {
+    content: "​co";
+    content: "​co"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  63.1257631258%, 63.7352637363% {
+    content: "​com";
+    content: "​com"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  63.7362637363%, 64.3457643468% {
+    content: "​comp";
+    content: "​comp"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  64.3467643468%, 64.9562649573% {
+    content: "​compr";
+    content: "​compr"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  64.9572649573%, 65.5667655678% {
+    content: "​compre";
+    content: "​compre"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  65.5677655678%, 66.1772661783% {
+    content: "​compres";
+    content: "​compres"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  66.1782661783%, 66.7877667888% {
+    content: "​compress";
+    content: "​compress"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  66.7887667888%, 67.3982673993% {
+    content: "​compressi";
+    content: "​compressi"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  67.3992673993%, 68.0087680098% {
+    content: "​compressib";
+    content: "​compressib"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  68.0097680098%, 68.6192686203% {
+    content: "​compressibl";
+    content: "​compressibl"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  68.6202686203%, 69.2297692308% {
+    content: "​compressible";
+    content: "​compressible"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  69.2307692308%, 69.8402698413% {
+    content: "​compressible ";
+    content: "​compressible "/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  69.8412698413%, 70.4507704518% {
+    content: "​compressible f";
+    content: "​compressible f"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  70.4517704518%, 71.0612710623% {
+    content: "​compressible fl";
+    content: "​compressible fl"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  71.0622710623%, 71.6717716728% {
+    content: "​compressible flo";
+    content: "​compressible flo"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  71.6727716728%, 72.2822722833% {
+    content: "​compressible flow";
+    content: "​compressible flow"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  72.2832722833%, 85.5911855922% {
+    content: "​compressible flows";
+    content: "​compressible flows"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  85.5921855922%, 86.0795860806% {
+    content: "​compressible flow";
+    content: "​compressible flow"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  86.0805860806%, 86.567986569% {
+    content: "​compressible flo";
+    content: "​compressible flo"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  86.568986569%, 87.0563870574% {
+    content: "​compressible fl";
+    content: "​compressible fl"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  87.0573870574%, 87.5447875458% {
+    content: "​compressible f";
+    content: "​compressible f"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  87.5457875458%, 88.0331880342% {
+    content: "​compressible ";
+    content: "​compressible "/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  88.0341880342%, 88.5215885226% {
+    content: "​compressible";
+    content: "​compressible"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  88.5225885226%, 89.009989011% {
+    content: "​compressibl";
+    content: "​compressibl"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  89.010989011%, 89.4983894994% {
+    content: "​compressib";
+    content: "​compressib"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  89.4993894994%, 89.9867899878% {
+    content: "​compressi";
+    content: "​compressi"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  89.9877899878%, 90.4751904762% {
+    content: "​compress";
+    content: "​compress"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  90.4761904762%, 90.9635909646% {
+    content: "​compres";
+    content: "​compres"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  90.9645909646%, 91.451991453% {
+    content: "​compre";
+    content: "​compre"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  91.452991453%, 91.9403919414% {
+    content: "​compr";
+    content: "​compr"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  91.9413919414%, 92.4287924298% {
+    content: "​comp";
+    content: "​comp"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  92.4297924298%, 92.9171929182% {
+    content: "​com";
+    content: "​com"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  92.9181929182%, 93.4055934066% {
+    content: "​co";
+    content: "​co"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  93.4065934066%, 93.893993895% {
+    content: "​c";
+    content: "​c"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+  93.894993895%, 100% {
+    content: "​";
+    content: "​"/"thermo-fluids";
+    alt: "thermo-fluids";
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+img {
+  max-width: 1024px;
+  max-height: 512px;
+}
+
+.left {
+  left: 0;
+  background-color: #000;
+}
+
+.right {
+  right: 0;
+  background-color: red;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+ul.topnav li {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.105);
+}
+
+ul.topnav li a.active {
+  color: purple;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+/*# sourceMappingURL=style_v1.css.map */
