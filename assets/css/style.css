@@ -284,7 +284,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/banner3.png") top right no-repeat;
+  background: url("../img/banner_dark.png") top right no-repeat;
   background-size: cover;
   position: relative;
 }
